@@ -19,7 +19,7 @@ import static utils.CookieParams.ROOM_PLAYER_AUTH_COOKIE_NAME;
 /**
  * Resource for creating player authentication.
  */
-@Path("/authentication-v1")
+@Path("/authentication")
 public class AuthenticationResource {
 
     private final PlayerAuthService playerAuthService;
