@@ -10,6 +10,7 @@
   "author": "ninjas",
   "license": "ISC",
   "dependencies": {
+    "phaser": "^3.55.2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
