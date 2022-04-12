@@ -1,3 +1,12 @@
+import { initiateGame } from "../../phaser/Game";
+import React, { useEffect, useRef } from "react";
 export const GameArea = () => {
-  return <section></section>;
+  const gameArea = useRef<HTMLElement>(null);
+  const gameInstance = useRef(null);
+
+  useEffect(() => {
+    gameInstance.current = initiateGame(gameArea.current);
+  }, []);
+
+  return <section ref={gameArea}></section>;
 };
