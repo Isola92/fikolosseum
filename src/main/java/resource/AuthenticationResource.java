@@ -37,7 +37,7 @@ public class AuthenticationResource {
      * @return an empty string in the response body and optionally a "Set-Cookie" response header
      */
     @PUT
-    @Path("/player-auth/{roomId}")
+    @Path("/{roomId}")
     public Observable<String> playerAuth(@PathParam("roomId") Integer roomId, @HeaderParam("playerName") String playerName) {
         Map<String, String> headers = new HashMap<>();
         Observable<String> getTokenAndSetHeader = playerAuthService.playerLogin(playerName)
