@@ -5,14 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "esbuild ./src/App.tsx --bundle --outfile=./bin/app.js --servedir=./  --sourcemap"
+    "dev": "esbuild ./src/App.tsx --bundle --outfile=./bin/app.js --watch  --sourcemap",
+    "dev-server": "esbuild ./src/App.tsx --bundle --outfile=./bin/app.js --servedir=./  --sourcemap"
   },
   "author": "ninjas",
   "license": "ISC",
   "dependencies": {
     "phaser": "^3.55.2",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.3.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.3",
